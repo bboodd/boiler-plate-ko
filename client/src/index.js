@@ -1,11 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'; //client
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
-import 'antd/dist/antd.css';
-import promiseMiddleware from 'redux';
+//import 'antd/dist/antd.css'; 업그레이드로 임포트 필요 x
+import promiseMiddleware from 'redux-promise';
+import {createStore, applyMiddleware} from "redux";
 import ReduxThunk from 'redux-thunk';
 import Reducer from './_reducers';
 
